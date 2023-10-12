@@ -69,3 +69,70 @@ img {
 a {
   text-decoration: none;
 }
+
+.mat-card {
+  background: #fdf1eb;
+  box-shadow: none;
+}
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+}
+
+.header-text {
+  color: #725c5c;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-heading {
+  color: #725c5c;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+//Cria container para adicionar ícone ao select
+.profile-container {
+  border: 10px;
+  align-self: center;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+//Ajusta dropdown para não ter efeitos
+.language-dropdown {
+  border: 1px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 4px;
+  display: flex;
+  padding: 8px;
+  height: fit-content;
+  align-self: center;
+}
+
+.language-selector {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  height: 22px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin-left: 8px;
+}

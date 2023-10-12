@@ -4,7 +4,7 @@
       <div class="event-header">
         <a href="...."><h3>SLACA 2019</h3></a>
       </div>
-      <img src="../assets/dewey 4.png" alt="Event Logo" />
+      <img src="../assets/dewey 4.png" alt="Logo do evento" />
       <mat-nav-list>
         <a mat-list-item href="...">Apresentação</a>
         <a mat-list-item href="...">Comitês</a>
@@ -19,5 +19,51 @@
       </mat-nav-list>
     </div>
   </mat-drawer>
-  <mat-drawer-content class="mainBody"> Main Content</mat-drawer-content>
+  <mat-drawer-content class="main-body">
+    <mat-card>
+      <mat-card-content class="header-container">
+        <div>
+          <p class="header-text">
+            Anais do Simpósio Latino Americano de Ciências de Alimentos
+          </p>
+          <h3 class="header-heading">
+            Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
+          </h3>
+          <p class="header-text">ISSN: 1234-5678</p>
+        </div>
+
+        <div class="profile-container">
+          <div class="language-dropdown">
+            <img
+              src="../assets/language image.png"
+              alt=""
+              style="width: 22px; height: 22px"
+            />
+            <select name="select" class="language-selector">
+              <option value="pt-br" selected>PT, BR</option>
+              <option value="en-us">EN, US</option>
+            </select>
+          </div>
+
+          <div style="display: flex; margin-left: 24px">
+            <div>
+              <p style="text-align: right; color: #333" class="header-text">
+                Bem Vindo!
+              </p>
+              <p class="header-text" style="color: #333; font-size: 12px">
+                alguem12@galoascience.com
+              </p>
+            </div>
+            <div matBadge="3" matBadgeColor="warn">
+              <img
+                src="../assets/profile.jpg"
+                alt="Profile Picture"
+                class="profile-picture"
+              />
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </mat-drawer-content>
 </mat-drawer-container>
