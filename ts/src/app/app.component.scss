@@ -71,15 +71,13 @@ a {
 }
 
 .mat-card {
-  background: #fdf1eb;
   box-shadow: none;
 }
 
-.header-container {
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-content: center;
 }
 
 .header-text {
@@ -111,10 +109,8 @@ a {
 
 //Ajusta dropdown para não ter efeitos
 .language-dropdown {
-  border: 1px;
-  border-style: solid;
-  border-color: gray;
-  border-radius: 4px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
   display: flex;
   padding: 8px;
   height: fit-content;
@@ -135,4 +131,81 @@ a {
   width: 40px;
   object-fit: cover;
   margin-left: 8px;
+}
+
+.title {
+  color: #ed7839;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px; /* 125% */
+  letter-spacing: 1px;
+}
+
+.button {
+  font-family: Roboto;
+  font-size: 16px;
+  background: #ed7839;
+}
+
+.details-card {
+  border-radius: 3px;
+  border: 1px solid #ececec;
+  padding: 0px;
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.details-card > div {
+  padding: 16px;
+  flex: 0 0 auto;
+  border-radius: 3px 3px 0px 0px;
+  border: 1px solid #ececec;
+  background: #fdf1eb;
+}
+
+.card-header-text {
+  color: #4e4e4e;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 125% */
+}
+
+.details-topic {
+  color: #5c5c5c;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+  letter-spacing: 0.24px;
+}
+
+.details-text {
+  color: #5c5c5c;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.24px;
+}
+
+.details-references {
+  color: #ada0a0;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+}
+
+.details-card p {
+  font-size: 14px;
 }

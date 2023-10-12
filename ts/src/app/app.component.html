@@ -20,8 +20,9 @@
     </div>
   </mat-drawer>
   <mat-drawer-content class="main-body">
-    <mat-card>
-      <mat-card-content class="header-container">
+    <!-- Cria card para header. -->
+    <mat-card style="background: #fdf1eb">
+      <mat-card-content class="flex-container">
         <div>
           <p class="header-text">
             Anais do Simpósio Latino Americano de Ciências de Alimentos
@@ -62,6 +63,119 @@
               />
             </div>
           </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <!-- Page Title e seção de video -->
+    <mat-card class="video-section">
+      <mat-card-content class="flex-container">
+        <div style="flex: 3; display: flex; flex-direction: column">
+          <h2 class="title">
+            Análise sensorial de preparações funcionais desenvolvidas para
+            escolares entre 09 e 15 anos, do município de Campinas/SP
+          </h2>
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1"
+            style="height: 100%"
+          >
+          </iframe>
+        </div>
+        <div style="flex: 1">
+          <mat-card
+            style="display: flex; justify-content: flex-end; padding: 0px"
+          >
+            <button
+              mat-flat-button
+              color="warn"
+              class="button"
+              style="margin-right: 8px"
+            >
+              <img
+                src="../assets/download.svg"
+                alt=""
+                style="width: 20px; height: 20px"
+              />
+              Download
+            </button>
+            <button
+              mat-flat-button
+              color="warn"
+              class="button"
+              style="margin-right: 8px"
+            >
+              <img
+                src="../assets/star.svg"
+                alt=""
+                style="width: 20px; height: 20px"
+              />
+            </button>
+            <button mat-flat-button color="warn" class="button">
+              <img
+                src="../assets/doi.svg"
+                alt=""
+                style="width: 20px; height: 20px"
+              />
+            </button>
+          </mat-card>
+          <mat-card style="padding-right: 0px">
+            <a href="...">
+              <p class="header-text" style="color: #ed7839; text-align: right">
+                COMO CITAR ESSE TRABALHO?
+              </p>
+            </a>
+          </mat-card>
+          <mat-card class="details-card">
+            <div>
+              <span class="card-header-text">Detalhes</span>
+            </div>
+            <mat-card-content
+              style="padding: 16px; flex: 1 1 auto; overflow-y: auto"
+            >
+              <div>
+                <span class="details-topic">Tipo de Apresentação: </span>
+                <span class="details-text">Pôster</span>
+              </div>
+              <div>
+                <span class="details-topic">Eixo temático: </span>
+                <span class="details-text">Alimentação e saúde (AS)</span>
+              </div>
+              <div>
+                <span class="details-topic">Palavras-chaves: </span>
+                <span class="details-text"
+                  >Alimentos funcionais, alimentação escolar.</span
+                >
+              </div>
+              <div style="margin-top: 32px">
+                <p class="details-text">Autores:</p>
+                <div class="details-topic">
+                  <p>Galileo Galilei¹</p>
+                  <p>Berta Lange de Morretes²</p>
+                  <p>Isaac Newton³</p>
+                  <p>Cesar Lattes¹</p>
+                  <p>Stephen Hawking⁴</p>
+                </div>
+              </div>
+              <div class="details-references" style="margin-top: 32px">
+                <span>¹Universidade Estadual de Campinas <br /> </span>
+                <span>²Universidade de São Paulo <br /></span>
+                <span>³Instituto Nacional de Pesquisas Espaciais <br /></span>
+                <span>⁴Universidade Federal do Rio de Janeiro <br /></span>
+                <span>¹Universidade Estadual de Campinas <br /> </span>
+                <span>²Universidade de São Paulo <br /></span>
+                <span>³Instituto Nacional de Pesquisas Espaciais <br /></span>
+                <span>⁴Universidade Federal do Rio de Janeiro <br /></span>
+                <span>¹Universidade Estadual de Campinas <br /></span>
+                <span>²Universidade de São Paulo <br /></span>
+                <span>³Instituto Nacional de Pesquisas Espaciais <br /></span>
+                <span>⁴Universidade Federal do Rio de Janeiro <br /></span>
+                <span>¹Universidade Estadual de Campinas <br /></span>
+                <span>²Universidade de São Paulo <br /></span>
+                <span>³Instituto Nacional de Pesquisas Espaciais <br /></span>
+                <span>⁴Universidade Federal do Rio de Janeiro <br /></span>
+              </div>
+            </mat-card-content>
+          </mat-card>
         </div>
       </mat-card-content>
     </mat-card>
