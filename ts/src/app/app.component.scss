@@ -153,10 +153,8 @@ a {
   border-radius: 3px;
   border: 1px solid #ececec;
   padding: 0px;
-  margin-left: 32px;
   display: flex;
   flex-direction: column;
-  height: 500px;
 }
 
 .details-card > div {
@@ -208,4 +206,20 @@ a {
 
 .details-card p {
   font-size: 14px;
+}
+
+//Cria text button porque o text butto do material angular contém espaçamento interno que atrapalha na altura do texto
+.btn-show-more {
+  color: #ed7839;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.resumo-text {
+  line-height: 162.5%;
+  font-size: 14px;
+  letter-spacing: 0.28px;
 }

@@ -2,20 +2,20 @@
   <mat-drawer mode="side" opened class="sidebar">
     <div>
       <div class="event-header">
-        <a href="...."><h3>SLACA 2019</h3></a>
+        <a href="/"><h3>SLACA 2019</h3></a>
       </div>
       <img src="../assets/dewey 4.png" alt="Logo do evento" />
       <mat-nav-list>
-        <a mat-list-item href="...">Apresentação</a>
-        <a mat-list-item href="...">Comitês</a>
-        <a mat-list-item href="...">Autores</a>
-        <a mat-list-item href="...">Eixos temáticos</a>
+        <a mat-list-item href="/">Apresentação</a>
+        <a mat-list-item href="/">Comitês</a>
+        <a mat-list-item href="/">Autores</a>
+        <a mat-list-item href="/">Eixos temáticos</a>
         <!-- Cria uma div para colocar detalhe colorido ao lado da opção ativa. -->
         <div class="active-option">
           <div class="active-option-detail"></div>
-          <a mat-list-item href="...">Trabalhos</a>
+          <a mat-list-item href="/">Trabalhos</a>
         </div>
-        <a mat-list-item href="...">Contato</a>
+        <a mat-list-item href="/">Contato</a>
       </mat-nav-list>
     </div>
   </mat-drawer>
@@ -76,7 +76,7 @@
             escolares entre 09 e 15 anos, do município de Campinas/SP
           </h2>
           <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1"
+            src="https://www.youtube.com/embed/cSQTZoZPJzs?controls=1"
             style="height: 100%"
           >
           </iframe>
@@ -93,7 +93,7 @@
             >
               <img
                 src="../assets/download.svg"
-                alt=""
+                alt="Download icon"
                 style="width: 20px; height: 20px"
               />
               Download
@@ -106,26 +106,29 @@
             >
               <img
                 src="../assets/star.svg"
-                alt=""
+                alt="Star icon"
                 style="width: 20px; height: 20px"
               />
             </button>
             <button mat-flat-button color="warn" class="button">
               <img
                 src="../assets/doi.svg"
-                alt=""
+                alt="DOI Icon"
                 style="width: 20px; height: 20px"
               />
             </button>
           </mat-card>
           <mat-card style="padding-right: 0px">
-            <a href="...">
+            <a href="/">
               <p class="header-text" style="color: #ed7839; text-align: right">
                 COMO CITAR ESSE TRABALHO?
               </p>
             </a>
           </mat-card>
-          <mat-card class="details-card">
+          <mat-card
+            class="details-card"
+            style="margin-left: 32px; height: 500px"
+          >
             <div>
               <span class="card-header-text">Detalhes</span>
             </div>
@@ -178,6 +181,135 @@
           </mat-card>
         </div>
       </mat-card-content>
+    </mat-card>
+
+    <!-- Seção de resumo -->
+    <mat-card>
+      <div>
+        <mat-card class="details-card">
+          <div>
+            <span class="card-header-text">Resumo</span>
+          </div>
+          <mat-card-content style="padding: 16px">
+            <!-- cria 2 textos, a versão compacta e total e utiliza javascript para alternar entre elas -->
+            <div *ngIf="compactText">
+              <span class="details-topic resumo-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Vestibulum id commodo odio, nec dignissim dui. Maecenas eu mi
+                eget ex dictum ultrices eget sit amet felis. Aenean vel
+                porttitor tortor. Morbi pretium leo a lacus euismod condimentum.
+                Praesent vehicula est et nibh accumsan hendrerit. Vivamus mattis
+                gravida vestibulum. Quisque rutrum nulla ex, eget porta diam
+                scelerisque sit amet. Morbi a pellentesque nisi, sed dictum
+                tortor. Nam ac elit nibh. Nam sagittis metus eu ante luctus
+                ultrices. Curabitur nec sollicitudin massa. Vivamus efficitur
+                dignissim risus a sagittis. Donec quam tortor, dignissim ut
+                luctus a, fringilla sed nibh. Nunc consequat tortor sed nisl
+                cursus, vel tincidunt nunc posuere.
+              </span>
+              <button
+                name="ver mais"
+                class="btn-show-more"
+                (click)="changeText()"
+              >
+                ver mais
+              </button>
+            </div>
+            <div *ngIf="allText">
+              <span class="details-topic resumo-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse vestibulum bibendum ligula, quis vehicula dui
+                maximus ut. Nulla aliquet, leo luctus luctus sagittis, sem nulla
+                gravida libero, ultricies imperdiet nunc lorem vel purus. Nullam
+                elementum turpis id elementum interdum. Sed porta dapibus augue,
+                ut sodales lorem feugiat a. Donec libero ante, varius vel
+                rhoncus ac, convallis id diam. Suspendisse at leo sed lorem
+                pretium laoreet quis eu elit. Donec non sodales dolor. Donec
+                quis posuere neque. Mauris accumsan elit mi, vel porta lectus
+                lobortis et. Nullam id nisi sit amet velit sodales porttitor.
+                Vestibulum non vehicula leo. Nullam vehicula mi sed purus tempus
+                lacinia. Integer in eros ligula. Nunc quis mauris gravida,
+                tempus ligula vitae, feugiat nunc. Fusce vitae lobortis lectus,
+                ultricies egestas leo. Sed id venenatis purus. Sed eu velit eu
+                augue bibendum consequat. Vivamus congue neque pulvinar enim
+                bibendum feugiat. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus. Nam non iaculis tortor, eu viverra lacus.
+                Fusce id ligula ut orci mollis gravida. Vestibulum elementum
+                magna vel interdum fringilla. Pellentesque interdum lacus eget
+                sagittis ornare. Nullam ac tristique arcu, id rutrum justo.
+                Aliquam mattis blandit imperdiet. Curabitur vel consequat sem,
+                consectetur dapibus sem. Aenean aliquet nibh at volutpat mollis.
+                Duis gravida, neque a finibus tristique, turpis ante dapibus
+                nunc, ut tristique turpis diam ac est. Donec bibendum pharetra
+                tortor tempor efficitur. Vivamus dapibus dictum consequat.
+                Pellentesque rutrum eros ut risus sagittis, ac ultricies est
+                volutpat. Donec erat erat, cursus et pretium vel, venenatis
+                bibendum dolor. Vivamus a malesuada diam. Nullam tristique
+                consequat dui quis euismod. Duis id malesuada mi, quis venenatis
+                orci. Pellentesque fringilla dapibus eros, sit amet vestibulum
+                nisi posuere et. Ut quis sodales tellus. In hac habitasse platea
+                dictumst. Vivamus scelerisque sagittis ipsum nec venenatis.
+                Nullam molestie mauris fermentum risus faucibus, feugiat
+                pellentesque nulla gravida. Ut condimentum lacus ut sem molestie
+                varius. Maecenas id facilisis ipsum. Praesent tristique, massa
+                vel faucibus fringilla, quam neque luctus risus, at ullamcorper
+                nunc diam at ante. Suspendisse nec faucibus quam. Pellentesque
+                pretium risus nec diam posuere viverra. Fusce lobortis ligula
+                ipsum, quis commodo sapien mollis non. Nam mollis vestibulum
+                eleifend. Vestibulum accumsan urna id dui maximus, eget
+                sollicitudin massa venenatis. Pellentesque tincidunt, sem vel
+                eleifend dapibus, arcu lacus lacinia odio, quis volutpat tortor
+                nisl vel sem. Donec molestie rutrum mauris, eu rhoncus arcu
+                vulputate at. Nullam luctus egestas risus, quis elementum purus
+                congue at. Mauris eu tincidunt quam. Vivamus id elementum purus.
+                Morbi non facilisis augue. Donec nisl nunc, euismod vel suscipit
+                vitae, maximus venenatis augue. Fusce id lobortis sapien,
+                lacinia venenatis lacus. Nunc iaculis pretium tellus, vitae
+                gravida est vehicula nec. Vestibulum id ante magna. Etiam enim
+                quam, interdum id arcu eget, aliquam posuere orci. Duis id enim
+                sollicitudin, auctor urna eget, condimentum eros. Integer
+                feugiat volutpat nulla, at fermentum purus pretium posuere.
+                Curabitur efficitur euismod tortor vitae porta. Proin et leo
+                molestie, posuere dolor nec, dictum nunc. Cras imperdiet leo
+                mattis molestie efficitur. Ut non lorem eu mauris malesuada
+                sollicitudin. Aenean justo neque, feugiat nec tincidunt sed,
+                pharetra ut velit. Fusce augue nisi, cursus ac lectus ut,
+                pellentesque placerat dui. In sodales lorem tempus elementum
+                iaculis. Class aptent taciti sociosqu ad litora torquent per
+                conubia nostra, per inceptos himenaeos. Proin dignissim, arcu id
+                auctor iaculis, tortor mi sollicitudin lectus, sed pulvinar erat
+                nunc ut quam. Duis nec lobortis elit. Proin sollicitudin
+                eleifend ipsum, ut accumsan augue faucibus et. Morbi placerat
+                tempus tellus, in varius ante euismod et. Donec ex urna,
+                sagittis non tincidunt non, dignissim at ligula. Praesent
+                lacinia dui imperdiet felis pulvinar euismod. Donec ac erat
+                ligula. Integer eget iaculis nisi. Phasellus nec enim sit amet
+                metus aliquet luctus. Mauris convallis nulla nulla. Suspendisse
+                potenti. Cras enim risus, accumsan dignissim egestas ac,
+                molestie ac lectus. Vestibulum ac nulla ex. Duis rhoncus, eros
+                quis ultricies sodales, velit ex condimentum enim, sit amet
+                elementum nisl odio ut mauris. Sed pretium tincidunt erat, ac
+                venenatis erat vestibulum ut. Fusce quis ipsum eu ipsum feugiat
+                tincidunt. Quisque blandit feugiat ligula, ac dignissim lacus
+                egestas in. Sed sagittis mattis efficitur. Nam placerat lorem
+                enim, sed bibendum tortor lobortis non. In tempus eros quis mi
+                efficitur, sit amet tincidunt tortor cursus. Nunc pulvinar
+                turpis sed dolor pharetra, sit amet auctor felis ornare. Integer
+                at luctus orci. Morbi lectus nulla, eleifend eget odio et,
+                ultricies elementum magna. Morbi interdum odio id dui
+                condimentum mattis.
+              </span>
+              <button
+                name="ver menos"
+                class="btn-show-more"
+                (click)="changeText()"
+              >
+                ver menos
+              </button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
     </mat-card>
   </mat-drawer-content>
 </mat-drawer-container>
