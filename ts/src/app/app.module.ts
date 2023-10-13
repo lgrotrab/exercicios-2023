@@ -9,6 +9,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +23,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     MatBadgeModule,
     MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

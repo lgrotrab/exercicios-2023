@@ -1,36 +1,68 @@
 <mat-drawer-container class="main-container">
   <mat-drawer mode="side" opened class="sidebar">
     <div>
-      <div class="event-header">
-        <a href="/"><h3>SLACA 2019</h3></a>
+      <div id="event-header" class="linear-background-primary">
+        <a href="/"
+          ><h3 class="h3-text-roboto text-white-color">SLACA 2019</h3></a
+        >
       </div>
       <img src="../assets/dewey 4.png" alt="Logo do evento" />
       <mat-nav-list>
-        <a mat-list-item href="/">Apresentação</a>
-        <a mat-list-item href="/">Comitês</a>
-        <a mat-list-item href="/">Autores</a>
-        <a mat-list-item href="/">Eixos temáticos</a>
+        <a
+          mat-list-item
+          class="normal-text-quicksand text-secundary-color"
+          href="/"
+          >Apresentação</a
+        >
+        <a
+          mat-list-item
+          class="normal-text-quicksand text-secundary-color"
+          href="/"
+          >Comitês</a
+        >
+        <a
+          mat-list-item
+          class="normal-text-quicksand text-secundary-color"
+          href="/"
+          >Autores</a
+        >
+        <a
+          mat-list-item
+          class="normal-text-quicksand text-secundary-color"
+          href="/"
+          >Eixos temáticos</a
+        >
         <!-- Cria uma div para colocar detalhe colorido ao lado da opção ativa. -->
         <div class="active-option">
-          <div class="active-option-detail"></div>
-          <a mat-list-item href="/">Trabalhos</a>
+          <div class="active-option-detail linear-background-primary"></div>
+          <a
+            mat-list-item
+            class="normal-text-quicksand text-secundary-color"
+            href="/"
+            >Trabalhos</a
+          >
         </div>
-        <a mat-list-item href="/">Contato</a>
+        <a
+          mat-list-item
+          class="normal-text-quicksand text-secundary-color"
+          href="/"
+          >Contato</a
+        >
       </mat-nav-list>
     </div>
   </mat-drawer>
   <mat-drawer-content class="main-body">
-    <!-- Cria card para header. -->
-    <mat-card style="background: #fdf1eb">
+    <!-- Header -->
+    <mat-card class="light-background">
       <mat-card-content class="flex-container">
         <div>
-          <p class="header-text">
+          <p class="text-secundary-color normal-text-roboto">
             Anais do Simpósio Latino Americano de Ciências de Alimentos
           </p>
-          <h3 class="header-heading">
+          <h3 class="h4-text-roboto text-secundary-color">
             Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
           </h3>
-          <p class="header-text">ISSN: 1234-5678</p>
+          <p class="text-secundary-color normal-text-roboto">ISSN: 1234-5678</p>
         </div>
 
         <div class="profile-container">
@@ -38,20 +70,20 @@
             <img
               src="../assets/language image.png"
               alt=""
-              style="width: 22px; height: 22px"
+              class="small-icon-img"
             />
-            <select name="select" class="language-selector">
+            <select name="select" class="language-selector normal-text-roboto">
               <option value="pt-br" selected>PT, BR</option>
               <option value="en-us">EN, US</option>
             </select>
           </div>
 
-          <div style="display: flex; margin-left: 24px">
+          <div id="profile-div">
             <div>
-              <p style="text-align: right; color: #333" class="header-text">
+              <p class="normal-text-roboto text-dark-color align-text-right">
                 Bem Vindo!
               </p>
-              <p class="header-text" style="color: #333; font-size: 12px">
+              <p class="text-dark-color small-text-roboto">
                 alguem12@galoascience.com
               </p>
             </div>
@@ -70,88 +102,91 @@
     <!-- Page Title e seção de video -->
     <mat-card class="video-section">
       <mat-card-content class="flex-container">
-        <div style="flex: 3; display: flex; flex-direction: column">
-          <h2 class="title">
+        <div id="video-title-div">
+          <h2 id="page-title">
             Análise sensorial de preparações funcionais desenvolvidas para
             escolares entre 09 e 15 anos, do município de Campinas/SP
           </h2>
           <iframe
             src="https://www.youtube.com/embed/cSQTZoZPJzs?controls=1"
-            style="height: 100%"
+            id="video-player"
           >
           </iframe>
         </div>
-        <div style="flex: 1">
-          <mat-card
-            style="display: flex; justify-content: flex-end; padding: 0px"
-          >
+        <div id="work-details">
+          <mat-card id="work-details-card">
             <button
               mat-flat-button
               color="warn"
-              class="button"
-              style="margin-right: 8px"
+              class="primary-background normal-text-roboto simple-margin-right"
             >
               <img
                 src="../assets/download.svg"
                 alt="Download icon"
-                style="width: 20px; height: 20px"
+                class="small-icon-img"
               />
               Download
             </button>
             <button
               mat-flat-button
               color="warn"
-              class="button"
-              style="margin-right: 8px"
+              class="primary-background simple-margin-right"
             >
               <img
                 src="../assets/star.svg"
                 alt="Star icon"
-                style="width: 20px; height: 20px"
+                class="small-icon-img"
               />
             </button>
-            <button mat-flat-button color="warn" class="button">
+            <button mat-flat-button color="warn" class="primary-background">
               <img
                 src="../assets/doi.svg"
                 alt="DOI Icon"
-                style="width: 20px; height: 20px"
+                class="small-icon-img"
               />
             </button>
           </mat-card>
-          <mat-card style="padding-right: 0px">
+          <mat-card class="no-padding-right">
             <a href="/">
-              <p class="header-text" style="color: #ed7839; text-align: right">
+              <p class="text-primary-color normal-text-roboto align-text-right">
                 COMO CITAR ESSE TRABALHO?
               </p>
             </a>
           </mat-card>
-          <mat-card
-            class="details-card"
-            style="margin-left: 32px; height: 500px"
-          >
-            <div>
-              <span class="card-header-text">Detalhes</span>
+          <mat-card class="card-container" id="detalhes-card-container">
+            <div class="card-header">
+              <span class="h4-text-roboto text-dark-color">Detalhes</span>
             </div>
-            <mat-card-content
-              style="padding: 16px; flex: 1 1 auto; overflow-y: auto"
-            >
+            <mat-card-content id="detalhes-cady-body">
               <div>
-                <span class="details-topic">Tipo de Apresentação: </span>
-                <span class="details-text">Pôster</span>
+                <span class="small-text-quicksand text-dark-color"
+                  >Tipo de Apresentação:
+                </span>
+                <span class="small-text-quicksand-bold text-dark-color"
+                  >Pôster</span
+                >
               </div>
               <div>
-                <span class="details-topic">Eixo temático: </span>
-                <span class="details-text">Alimentação e saúde (AS)</span>
+                <span class="small-text-quicksand text-dark-color"
+                  >Eixo temático:
+                </span>
+                <span class="small-text-quicksand-bold text-dark-color"
+                  >Alimentação e saúde (AS)</span
+                >
               </div>
               <div>
-                <span class="details-topic">Palavras-chaves: </span>
-                <span class="details-text"
+                <span class="small-text-quicksand text-dark-color"
+                  >Palavras-chaves:
+                </span>
+                <span class="small-text-quicksand-bold text-dark-color"
                   >Alimentos funcionais, alimentação escolar.</span
                 >
               </div>
-              <div style="margin-top: 32px">
-                <p class="details-text">Autores:</p>
-                <div class="details-topic">
+              <div class="quadruple-margin-top">
+                <p class="small-text-quicksand-bold text-dark-color">
+                  Autores:
+                </p>
+                <div class="small-text-quicksand text-dark-color">
                   <p>Galileo Galilei¹</p>
                   <p>Berta Lange de Morretes²</p>
                   <p>Isaac Newton³</p>
@@ -159,7 +194,9 @@
                   <p>Stephen Hawking⁴</p>
                 </div>
               </div>
-              <div class="details-references" style="margin-top: 32px">
+              <div
+                class="small-text-quicksand text-light-color quadruple-margin-top"
+              >
                 <span>¹Universidade Estadual de Campinas <br /> </span>
                 <span>²Universidade de São Paulo <br /></span>
                 <span>³Instituto Nacional de Pesquisas Espaciais <br /></span>
@@ -183,17 +220,17 @@
       </mat-card-content>
     </mat-card>
 
-    <!-- Seção de resumo -->
+    <!-- Resumo -->
     <mat-card>
       <div>
-        <mat-card class="details-card">
-          <div>
-            <span class="card-header-text">Resumo</span>
+        <mat-card class="card-container">
+          <div class="card-header">
+            <span class="h4-text-roboto text-dark-color">Resumo</span>
           </div>
           <mat-card-content style="padding: 16px">
             <!-- cria 2 textos, a versão compacta e total e utiliza javascript para alternar entre elas -->
             <div *ngIf="compactText">
-              <span class="details-topic resumo-text">
+              <span class="normal-text-quicksand text-dark-color">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum id commodo odio, nec dignissim dui. Maecenas eu mi
                 eget ex dictum ultrices eget sit amet felis. Aenean vel
@@ -205,7 +242,7 @@
                 ultrices. Curabitur nec sollicitudin massa. Vivamus efficitur
                 dignissim risus a sagittis. Donec quam tortor, dignissim ut
                 luctus a, fringilla sed nibh. Nunc consequat tortor sed nisl
-                cursus, vel tincidunt nunc posuere.
+                cursus, vel tincidunt nunc posuere...
               </span>
               <button
                 name="ver mais"
@@ -216,7 +253,7 @@
               </button>
             </div>
             <div *ngIf="allText">
-              <span class="details-topic resumo-text">
+              <span class="normal-text-quicksand text-dark-color">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse vestibulum bibendum ligula, quis vehicula dui
                 maximus ut. Nulla aliquet, leo luctus luctus sagittis, sem nulla
@@ -311,5 +348,340 @@
         </mat-card>
       </div>
     </mat-card>
+
+    <!-- Discussões -->
+    <mat-card>
+      <div>
+        <mat-card class="card-container">
+          <div class="card-header">
+            <span class="h4-text-roboto text-dark-color">Discussões</span>
+          </div>
+          <!-- Versão inicial -->
+          <mat-card-content
+            class="discussao-card-content"
+            *ngIf="initialDiscussion"
+          >
+            <h4 class="h4-text-roboto text-primary-color">
+              Compartilhe suas ideias ou dúvidas com os autores!
+            </h4>
+            <div class="triple-margin-top">
+              <img
+                src="../assets/discussao1.svg"
+                alt="Ícone da discussão"
+                class="big-margin-right medium-icon-img"
+              />
+              <img
+                src="../assets/discussao2.svg"
+                alt="Ícone da discussão"
+                class="big-margin-right medium-icon-img"
+              />
+              <img
+                src="../assets/discussao3.svg"
+                class="medium-icon-img"
+                alt="Ícone da discussão"
+              />
+            </div>
+            <p
+              class="normal-text-quicksand text-dark-color quadruple-margin-top discussao-text-details"
+            >
+              Sabia que o maior estímulo no desenvolvimento científico e
+              cultural é a curiosidade? Deixe seus questionamentos ou sugestões
+              para o autor!
+            </p>
+            <button
+              mat-raised-button
+              color="warn"
+              class="linear-background-primary btn-create-topic double-margin-top"
+              (click)="changeInitialDiscussion()"
+            >
+              <img
+                src="../assets/icon - criar.svg"
+                alt="Download icon"
+                class="small-icon-img"
+              />
+              criar tópico
+            </button>
+          </mat-card-content>
+
+          <!-- Form -->
+          <mat-card-content
+            class="discussao-card-content"
+            *ngIf="formsDiscussion"
+          >
+            <p
+              class="normal-text-quicksand text-dark-color discussao-text-details"
+            >
+              Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
+              autores!
+            </p>
+
+            <form action="" id="form-container">
+              <div class="flex-column-container">
+                <p class="normal-text-roboto-bold text-primary-color">
+                  Assunto
+                </p>
+                <mat-form-field appearance="outline">
+                  <input
+                    name="Assunto"
+                    matInput
+                    placeholder="Defina um tópico sucinto para notificar os autores..."
+                    class="normal-text-quicksand text-dark-color"
+                  />
+                </mat-form-field>
+              </div>
+              <div class="big-form-field flex-column-container">
+                <p class="normal-text-roboto-bold text-primary-color">
+                  Conteúdo
+                </p>
+                <mat-form-field appearance="outline">
+                  <textarea
+                    matInput
+                    style="height: 100px"
+                    name="Conteúdo"
+                  ></textarea>
+                </mat-form-field>
+              </div>
+              <div id="send-container">
+                <button
+                  mat-raised-button
+                  color="warn"
+                  class="linear-background-primary normal-text-roboto btn-create-topic"
+                  id="send-button"
+                  name="Enviar"
+                  (click)="changeFormsDiscussion()"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </mat-card-content>
+
+          <!-- Discussion Sent -->
+          <mat-card-content
+            class="discussao-card-content"
+            *ngIf="sentFormDiscussion"
+          >
+            <h4 class="h4-text-roboto text-primary-color">
+              Seu tópico foi enviado com sucesso! :D
+            </h4>
+            <p
+              class="normal-text-quicksand text-dark-color triple-margin-top"
+              style="text-align: center"
+            >
+              Agradecemos por sua contribuição, uma notificação será enviada ao
+              seu email assim que seu tópico for respondido!
+            </p>
+            <a
+              href="/"
+              class="text-primary-color normal-text-quicksand triple-margin-top"
+              style="text-decoration-line: underline"
+              >Descubra Outros trabalhos</a
+            >
+            <button
+              mat-raised-button
+              color="warn"
+              class="linear-background-primary normal-text-roboto btn-create-topic quadruple-margin-top"
+              id="new-topic-button"
+              (click)="changeFormsDiscussion()"
+            >
+              Criar novo Tópico
+            </button>
+            <div id="sent-confirmation-container" class="triple-margin-top">
+              <img
+                src="../assets/checkmark.svg
+          "
+                alt="ícone para favoritar discussão"
+                style="align-self: center"
+                class="double-margin-left small-icon-img"
+              />
+              <p
+                class="normal-text-quicksand text-dark-color triple-margin-top"
+                style="text-align: center"
+              >
+                Aguardando feedback dos autores
+              </p>
+              <a
+                href="/"
+                class="text-primary-color normal-text-quicksand triple-margin-top"
+                style="text-decoration-line: underline; align-self: center"
+                >Editar Tópico</a
+              >
+            </div>
+          </mat-card-content>
+
+          <!-- Comentário -->
+          <mat-card-content>
+            <mat-card>
+              <mat-card-content class="card-container display-flex">
+                <div
+                  class="comment-card answered-topic"
+                  (click)="toggleComments()"
+                >
+                  <p
+                    class="normal-text-quicksand-bold text-primary-color ops-topic-subject"
+                    (click)="toggleComments()"
+                  >
+                    Assunto da pergunta aparece aqui
+                  </p>
+                  <p class="small-text-quicksand text-dark-color">
+                    Carlos Henrique Santos
+                  </p>
+                </div>
+                <div class="comment-card">
+                  <p class="normal-text-quicksand text-dark-color">
+                    Comecinho da pergunta aparece aqui resente relato
+                    inscreve-se no campo da análise da dimensão e impacto de
+                    processo formativo situado impacto de processo formativo
+                    processo...
+                  </p>
+                  <div
+                    class="display-flex"
+                    style="align-items: center; height: 40px"
+                  >
+                    <img
+                      src="../assets/mais informações.svg"
+                      alt="ícones de mais opções"
+                      class="small-icon-img simple-margin-right"
+                    />
+                    <button
+                      class="primary-background simple-margin-right"
+                      id="like-button"
+                    >
+                      <img
+                        src="../assets/heart.svg"
+                        alt="ícone para favoritar discussão"
+                        class="small-icon-img"
+                      />
+                    </button>
+
+                    <p class="no-margin-botton simple-margin-right">1 like</p>
+                    <p class="no-margin-botton">1 resposta</p>
+                  </div>
+                </div>
+              </mat-card-content>
+              <div class="comments-container" *ngIf="expandedComentary">
+                <mat-card-content
+                  class="card-container no-margin-botton display-flex author-comment-card"
+                >
+                  <div class="double-padding">
+                    <div class="display-flex">
+                      <p
+                        style="flex: 1"
+                        class="small-text-quicksand-bold text-dark-color"
+                      >
+                        Adriano da Silva
+                      </p>
+                      <p class="normal-text-quicksand text-primary-color">
+                        Autor
+                      </p>
+                      <img
+                        src="../assets/checkmark.svg
+                        "
+                        alt="ícone para favoritar discussão"
+                        class="double-margin-left small-icon-img"
+                      />
+                    </div>
+                    <p class="normal-text-quicksand text-dark-color">
+                      Resposta do autor é aqui. Relato inscreve-se no campo da
+                      análise da dimensão e impacto de processo formativo
+                      situado impacto de processo formativo processo resente
+                      relato inscreve-se no campo da análise da dimensão e
+                      impacto de processo formativo situado impacto de processo
+                      formativo processo.
+                    </p>
+                  </div>
+                </mat-card-content>
+                <mat-card-content
+                  class="card-container no-margin-botton display-flex"
+                >
+                  <div class="double-padding">
+                    <div class="display-flex">
+                      <p
+                        style="flex: 1"
+                        class="small-text-quicksand-bold text-dark-color"
+                      >
+                        Carlos Henrique Santos
+                      </p>
+                    </div>
+                    <p class="normal-text-quicksand text-dark-color">
+                      Consegui entender melhor agora! Parece que a variação da
+                      análise da dimensão e impacto de processo formativo
+                      situado impacto de processo formativo. Obrigada pela
+                      resposta, muito interessante o seu trabalho!
+                    </p>
+                  </div>
+                </mat-card-content>
+                <mat-card-content
+                  class="card-container no-margin-botton display-flex author-comment-card"
+                >
+                  <div class="double-padding">
+                    <div class="display-flex">
+                      <p
+                        style="flex: 1"
+                        class="small-text-quicksand-bold text-dark-color"
+                      >
+                        Carmila Ferreira Andrade
+                      </p>
+                      <p class="normal-text-quicksand text-primary-color">
+                        Coautor
+                      </p>
+                      <img
+                        src="../assets/checkmark.svg
+                      "
+                        alt="ícone para favoritar discussão"
+                        class="double-margin-left small-icon-img"
+                      />
+                    </div>
+                    <p class="normal-text-quicksand text-dark-color">
+                      Também ínteressante lembrar que o relato inscreve-se no
+                      campo da análise da dimensão e impacto de processo
+                      formativo situado impacto de processo formativo processo
+                      resente relato inscreve-se no campo da análise da dimensão
+                      e impacto de processo formativo situado impacto de
+                      processo formativo processo. Situado impacto de processo
+                      formativo processo resente relato inscreve-se no campo da
+                      análise da dimensão e impacto de processo formativo
+                      situado impacto de processo formativo processo.
+                    </p>
+                  </div>
+                </mat-card-content>
+                <mat-card-content
+                  class="card-container no-margin-botton display-flex author-comment-card"
+                >
+                  <div class="double-padding">
+                    <div class="display-flex">
+                      <p
+                        style="flex: 1"
+                        class="small-text-quicksand-bold text-dark-color"
+                      >
+                        Ana Carolina
+                      </p>
+                      <p class="normal-text-quicksand text-primary-color">
+                        Coautor
+                      </p>
+                      <img
+                        src="../assets/checkmark.svg
+                      "
+                        alt="ícone para favoritar discussão"
+                        class="double-margin-left small-icon-img"
+                      />
+                    </div>
+                    <p class="normal-text-quicksand text-dark-color">
+                      Resposta do autor é aqui. Relato inscreve-se no campo da
+                      análise da dimensão e impacto de processo formativo
+                      situado impacto de processo formativo processo resente
+                      relato inscreve-se no campo da análise da dimensão e
+                      impacto de processo formativo situado impacto de processo
+                      formativo processo.
+                    </p>
+                  </div>
+                </mat-card-content>
+              </div>
+            </mat-card>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-card>
+    <!-- Footer -->
   </mat-drawer-content>
 </mat-drawer-container>

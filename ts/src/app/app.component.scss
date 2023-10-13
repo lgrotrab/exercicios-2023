@@ -6,25 +6,6 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
-.event-header {
-  height: 68px;
-  background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.event-header h3 {
-  color: #fff;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin: 0px;
-}
-
 img {
   width: 220px;
   height: 258px;
@@ -36,12 +17,6 @@ img {
 }
 
 .mat-list-item {
-  color: #725c5c;
-  font-family: Quicksand;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -62,7 +37,6 @@ img {
 //Retângulo de detalhamento da opção ativa
 .active-option-detail {
   width: 5px;
-  background: linear-gradient(180deg, #ffb455 0%, #ed7839 100%);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -78,24 +52,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-}
-
-.header-text {
-  color: #725c5c;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.header-heading {
-  color: #725c5c;
-  font-family: Roboto;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 //Cria container para adicionar ícone ao select
@@ -121,7 +77,6 @@ a {
   background: transparent;
   border: none;
   outline: none;
-  font-size: 14px;
   height: 22px;
 }
 
@@ -133,79 +88,25 @@ a {
   margin-left: 8px;
 }
 
-.title {
-  color: #ed7839;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 25px; /* 125% */
-  letter-spacing: 1px;
-}
-
-.button {
-  font-family: Roboto;
-  font-size: 16px;
-  background: #ed7839;
-}
-
-.details-card {
+.card-container {
   border-radius: 3px;
   border: 1px solid #ececec;
   padding: 0px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
 }
 
-.details-card > div {
+.card-container p {
+  font-size: 14px;
+}
+
+.card-header {
   padding: 16px;
   flex: 0 0 auto;
   border-radius: 3px 3px 0px 0px;
   border: 1px solid #ececec;
   background: #fdf1eb;
-}
-
-.card-header-text {
-  color: #4e4e4e;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 25px; /* 125% */
-}
-
-.details-topic {
-  color: #5c5c5c;
-  font-family: Quicksand;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%; /* 14.4px */
-  letter-spacing: 0.24px;
-}
-
-.details-text {
-  color: #5c5c5c;
-  font-family: Quicksand;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-  letter-spacing: 0.24px;
-}
-
-.details-references {
-  color: #ada0a0;
-  font-family: Quicksand;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 12px;
-  letter-spacing: 0.24px;
-}
-
-.details-card p {
-  font-size: 14px;
 }
 
 //Cria text button porque o text butto do material angular contém espaçamento interno que atrapalha na altura do texto
@@ -218,8 +119,310 @@ a {
   cursor: pointer;
 }
 
-.resumo-text {
-  line-height: 162.5%;
-  font-size: 14px;
-  letter-spacing: 0.28px;
+.discussao-card-content {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+//remove margin e padding para colar o text area no botão, angular material adiciona um wrapper com espaçamento por padrão
+.big-form-field {
+  margin-bottom: -1.6em;
+  padding-bottom: -1.34375em;
+}
+
+.mat-expansion-panel {
+  margin: 16px;
+}
+
+.mat-card-content {
+  margin-bottom: 0px;
+}
+
+.text-dark-color {
+  color: #333;
+}
+
+.text-light-color {
+  color: #ada0a0;
+}
+
+.text-secundary-color {
+  color: #725c5c;
+}
+
+.text-primary-color {
+  color: #ed7839;
+}
+
+.text-white-color {
+  color: white;
+}
+
+.normal-text-roboto {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.normal-text-roboto-bold {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.small-text-roboto {
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.small-text-quicksand {
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.small-text-quicksand-bold {
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.normal-text-quicksand {
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.normal-text-quicksand-bold {
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h3-text-roboto {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h4-text-roboto {
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.linear-background-primary {
+  background: linear-gradient(180deg, #ffb354 0%, #ee7a3a 100%);
+}
+
+.light-background {
+  background: #fdf1eb;
+}
+
+.primary-background {
+  background: #ed7839;
+}
+
+.align-text-right {
+  text-align: right;
+}
+
+.small-icon-img {
+  width: 20px;
+  height: 20px;
+}
+
+.medium-icon-img {
+  width: 50px;
+  height: 50px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.no-padding-right {
+  padding-right: 0px;
+}
+
+.no-margin-botton {
+  margin-bottom: 0px;
+}
+
+.double-padding {
+  padding: 16px;
+}
+
+.simple-padding-top {
+  padding-top: 8px;
+}
+
+.big-margin-right {
+  margin-right: 52px;
+}
+.simple-margin-right {
+  margin-right: 8px;
+}
+
+.simple-margin-top {
+  margin-top: 8px;
+}
+
+.double-margin-top {
+  margin-top: 16px;
+}
+
+.triple-margin-top {
+  margin-top: 24px;
+}
+
+.quadruple-margin-top {
+  margin-top: 32px;
+}
+
+.quadruple-margin-bottom {
+  margin-bottom: 48px;
+}
+
+.double-margin-left {
+  margin-left: 16px;
+}
+.discussao-text-details {
+  max-width: 620px;
+  text-align: center;
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.comment-card {
+  padding: 16px 16px 0px 16px;
+}
+
+.author-comment-card {
+  background: #f8f8f8;
+}
+
+.answered-topic,
+.ops-topic-subject {
+  cursor: pointer;
+}
+
+#video-title-div {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+#video-player {
+  height: 100%;
+}
+
+#work-details {
+  flex: 1;
+}
+
+#work-details-card {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px;
+}
+
+#profile-div {
+  display: flex;
+  margin-left: 24px;
+}
+
+#event-header {
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#event-header h3 {
+  margin: 0px;
+}
+
+#detalhes-card-container {
+  margin-left: 32px;
+  height: 500px;
+}
+
+#detalhes-cady-body {
+  padding: 16px;
+  flex: 1 1 auto;
+  overflow-y: auto;
+}
+
+#page-title {
+  color: #ed7839;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px; /* 125% */
+  letter-spacing: 1px;
+}
+
+#form-container {
+  width: 100%;
+}
+
+#send-container {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #ccc;
+  background: #eaf1f2;
+}
+
+#send-button {
+  width: 15%;
+  min-width: 150px;
+}
+
+#new-topic-button {
+  width: 20%;
+  min-width: 200px;
+}
+
+#like-button {
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.24))
+    drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
+  border-radius: 2px;
+  border: none;
+}
+
+#sent-confirmation-container {
+  background: rgba(221, 221, 221, 0.2);
+  height: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
