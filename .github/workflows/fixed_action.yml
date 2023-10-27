@@ -1,9 +1,10 @@
-name: ts
-run-name: ${{ github.actor }} está usando o github actions para validar o projeto
+name: ts2
+
 on:
   push:
     paths:
       - "ts/**"
+      - ".github/workflows/**"
 
 jobs:
   build:
@@ -15,31 +16,32 @@ jobs:
       ELECTRON_EXTRA_LAUNCH_ARGS: "--disable-gpu"
     steps:
       - name: Use Node.js 14.21.2
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: 14.21.2
 
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: npm install
         run: |
-          cd ts;
-          npm install;
+          cd ts
+          npm install
 
       - name: run test
         run: |
-          cd ts;
+          cd ts
           npm run test
 
       - name: Stores screenshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: cypress-screenshots
           path: ./ts/cypress/screenshots
         if: always()
 
       - name: Stores snapshots
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: cypress-snapshots
           path: ./ts/cypress/snapshots
